@@ -59,8 +59,8 @@ def sidebar():
         # Create the radio button and link it to the session state
         st.radio(
             "Select Persona", 
-            options=["General", "Teacher", "Nurse", "Doctor"], 
-            index=["General", "Teacher", "Nurse", "Doctor"].index(st.session_state.mode),
+            options=["General", "Academician", "Nurse", "Physician"], 
+            index=["General", "Academician", "Nurse", "Physician"].index(st.session_state.mode),
             key="persona_radio",
             on_change=update_mode
         )
